@@ -2,7 +2,7 @@
 <html>
 <head>
   <h1>This is my Test Page</h1>
-  <title>Map View</title>
+  <title>I'm trying to add a map view</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <style>
     #map {
@@ -17,15 +17,15 @@
 
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script>
-    const map = L.map('map').setView([-36.86993, 174.7780], 13); // Auckland, New Market cordinates
+    const map = L.map('map').setView([-36.909597, 174.677931], 13); // Auckland, New Market cordinates
     // rds
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
 
-    L.marker([-36.86993, 174.7780]).addTo(map)
-      .bindPopup('New Market')
+    L.marker([-36.909597, 174.677931]).addTo(map)
+      .bindPopup('New Lynn')
       .openPopup();
   </script>
 </body>
